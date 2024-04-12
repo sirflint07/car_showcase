@@ -24,11 +24,11 @@ export const footerLinks = [
   {
     title: "Socials",
     links: [
-        { title: "Discord", url: "/"},
+        { title: "Behance", url: "https://www.behance.net/golden_designs"},
         { title: "Instagram", url: "https://www.instagram.com/golden_designs07/"},
         { title: "Twitter", url: "https://twitter.com/golden_designs7?s=09"},
         { title: "Facebook", url: "https://www.facebook.com/profile.php?id=100083168710628"},
-        {title: "YouTube", url: "https://www.youtube.com/@golden_designs"}
+        { title: "YouTube", url: "https://www.youtube.com/@golden_designs"}
     ]
   },
 ];
