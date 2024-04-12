@@ -1,3 +1,5 @@
+import { title } from "process";
+
 export const footerLinks = [
   {
     title: "About",
@@ -23,9 +25,10 @@ export const footerLinks = [
     title: "Socials",
     links: [
         { title: "Discord", url: "/"},
-        { title: "Instagram", url: "/"},
-        { title: "Twitter", url: "/"},
-        { title: "Facebook", url: "/"},
+        { title: "Instagram", url: "https://www.instagram.com/golden_designs07/"},
+        { title: "Twitter", url: "https://twitter.com/golden_designs7?s=09"},
+        { title: "Facebook", url: "https://www.facebook.com/profile.php?id=100083168710628"},
+        {title: "YouTube", url: "https://www.youtube.com/@golden_designs"}
     ]
   },
 ];
