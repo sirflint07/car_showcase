@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { footerLinks } from '@/constants';
 import Link from 'next/link';
+import { url } from 'inspector';
 
 const Footer = () => {
   return (
@@ -16,7 +17,7 @@ const Footer = () => {
             <div key={link.title} className='flex flex-col text-sm'>
               <h3 className='font-bold md:text-xl'>{link.title}</h3>
               {link.links.map((item) => (
-                <Link key={item.title} href='/' className='py-1 mt-3 text-gray-600 font-normal text-xs'>
+                <Link key={item.title} href={item.url} className='py-1 mt-3 text-gray-600 font-normal text-xs'>
                   {item.title}
                 </Link>
               ))}
