@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+.search-manufacturer {
+  @apply flex-1 max-sm:w-full flex justify-start items-center rounded-full w-auto;
+};
+
+.search-manufacturer__input {
+  @apply w-full h-[48px] pl-12 p-4 rounded-l-full max-sm:rounded-full bg-light-white outline-none cursor-pointer text-sm;
+};
+
+.search-manufacturer__option {
+  @apply cursor-default select-none py-2 pl-10 pr-4;
+};
+
+.search-manufacturer__options {
+  @apply absolute mt-1 w-full overflow-scroll rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+};
+
+.home__error-container {
+  @apply mt-16 flex justify-center items-center flex-col gap-2;
+};
+
+.car-card {
+  @apply flex flex-col p-6 justify-center items-start text-black-100 bg-yellow-50 hover:bg-white hover:shadow-md rounded-3xl;
+};
+
+.car-card__content {
+  @apply w-full flex justify-between items-start gap-2;
+};
+
+.car-card__content-title {
+  @apply text-[22px] leading-[26px] font-bold capitalize;
+};
+
+.home__cars-wrapper {
+  @apply flex w-[500px] gap-8 pt-14;
+}
+
+.car-card__btn-container {
+  @apply group-hover:flex mt-3 bottom-0 w-full z-10;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+.searchbar {
+  @apply flex items-center justify-start max-sm:flex-col w-full relative max-sm:gap-4 max-w-3xl;
+}
+
+.searchbar__item {
+  @apply flex-1 max-sm:w-full flex justify-start items-center relative;
+}
+
+.searchbar__input {
+  @apply w-full h-[48px] pl-12 p-4 bg-light-white text-sm rounded-r-full;
+}
+
+.custom-filter__btn {
+  @apply relative w-full min-w-[127px] flex justify-between items-center cursor-default rounded-lg bg-white py-2 px-3 text-left shadow-md sm:text-sm border;
+}
+
+.custom-filter__options {
+  @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm;
+}
+/*  grid-flow-row 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-3     max-sm:rounded-full outline-none cursor-pointer */
